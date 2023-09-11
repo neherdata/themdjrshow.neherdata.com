@@ -1,26 +1,32 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
-<meta charset="utf-8">
-<title>The Morton Downey Jr. Show</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <title>The Morton Downey Jr. Show</title>
+  <link href="https://vjs.zencdn.net/8.5.2/video-js.css" rel="stylesheet" />
 
-<style>
-.morton {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  
-}
-.vidLink {
-  display: block; 
-  margin-left: auto;
-  margin-right: auto;
-  font-family: "Lucida Console", Courier, monospace;
-  font-style: oblique;
-  }
+  <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+  <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-h1 {
+  <style>
+    .morton {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+
+    }
+
+    .vidLink {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      font-family: "Lucida Console", Courier, monospace;
+      font-style: oblique;
+    }
+
+    h1 {
       display: block;
       font-family: "Lucida Console", Courier, monospace;
       font-style: oblique;
@@ -34,30 +40,38 @@ h1 {
       font-style: oblique;
       text-align: center;
     }
-    
-p {
+
+    p {
       font-family: "Lucida Console", Courier, monospace;
       font-style: oblique;
       text-align: center;
     }
-    
-a {
+
+    a {
       font-family: "Lucida Console", Courier, monospace;
       font-style: oblique;
       text-align: center;
     }
-</style>
+  </style>
 </head>
 
 <body>
   <h1>The Morton Downey Jr. Show</h1>
-  
-  <img class="morton" src="tmdjrshow-intro.gif" alt="The Morton Downey Jr. Show" width="95%" height="auto">
-  </ br>
-  <a class="vidLink" href="tmdjrshow-intro.mp4">Show Introduction</a>
 
-  
-</body> 
+  <video id="tmdjrshow-intro" class="video-js" controls preload="auto" width="640" height="264"
+    poster="tmdjrshow-splash.jpg" data-setup="{}">
+    <source src="tmdjrshow-intro.mp4" type="video/mp4" />
+    <source src="tmdjrshow-intro.webm" type="video/webm" />
+    <p class="vjs-no-js">
+      To view this video please enable JavaScript, and consider upgrading to a
+      web browser that
+      <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+    </p>
+  </video>
+
+  <script src="https://vjs.zencdn.net/8.5.2/video.min.js"></script>
+
+</body>
 
 
 <footer>
